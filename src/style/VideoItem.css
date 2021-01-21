@@ -1,0 +1,13 @@
+#video-content {
+  width: 450px;
+}
+
+#video-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#video-item.item img {
+  max-width: 150px;
+}

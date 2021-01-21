@@ -24,6 +24,7 @@ class SearchBar extends React.Component {
               <h1>Search a video</h1>
             </label>
             <input
+              name='query'
               type='text'
               value={this.state.word}
               onChange={this.handleChange}
