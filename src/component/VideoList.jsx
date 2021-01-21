@@ -3,17 +3,23 @@ import '../style/VideoItem.css';
 
 const VideoList = ({ videos, onClick }) => {
   return (
-    <div className='ui divided relaxed list'>
-      {videos.map((video) => (
-        <VideoItem
-          video={video}
-          onClick={onClick}
-          key={video.id.videoId}
-          title={video.snippet.title}
-          description={video.snippet.description}
-          photo={video.snippet.thumbnails.high.url}
-        />
-      ))}
+    <div className='ui segment video-block'>
+      <div className='ui divided relaxed list'>
+        {videos.length === 0 ? (
+          <div style={{ fontWeight: 'bolder' }}>Waiting for user input ...</div>
+        ) : (
+          videos.map((video) => (
+            <VideoItem
+              video={video}
+              onClick={onClick}
+              key={video.id.videoId}
+              title={video.snippet.title}
+              description={video.snippet.description}
+              photo={video.snippet.thumbnails.high.url}
+            />
+          ))
+        )}
+      </div>
     </div>
   );
 };

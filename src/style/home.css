@@ -1,0 +1,59 @@
+.ui.segment {
+  position: relative;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  margin: 1rem 0;
+  padding: 1em 1em;
+  border-radius: 1rem;
+  border: none !important;
+}
+form input {
+  width: -webkit-fill-available !important;
+  border: none !important ;
+  height: 35px !important ;
+  border-radius: 6px !important ;
+  padding: 20px 15px !important;
+  margin-top: 11px !important;
+  font-size: 16px !important;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+body {
+  background-color: #bae0ff;
+  margin: 0 30px;
+  padding-top: 40px;
+}
+
+.video-block {
+  margin-top: 0 !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  background-color: white !important;
+  padding: 25px !important;
+}
+
+.video-iframe {
+  text-align: center;
+}
+
+.search-bar {
+  background-color: #356792 !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+h1 {
+  color: white;
+}
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-color: white;
+  background-image: none !important;
+  color: white !important;
+}

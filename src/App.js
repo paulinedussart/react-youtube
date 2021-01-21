@@ -7,6 +7,8 @@ import VideoList from './component/VideoList';
 import SearchBar from './component/SearchBar';
 import VideoDetail from './component/VideoDetail';
 import './style/Video.css';
+import './style/home.css';
+
 const KEY = 'AIzaSyCd5gPUrQBxlFpvZ_2MLjyHw1qudLuMaGc';
 
 class App extends React.Component {
@@ -29,7 +31,6 @@ class App extends React.Component {
 
   onClickItem = (video) => {
     this.setState({ currentVideo: video });
-    console.log(video);
   };
   render() {
     return (
@@ -46,7 +47,6 @@ class App extends React.Component {
             videos={this.state.videos.filter((video) => video !== this.state.currentVideo)}
           />
         </div>
-        {console.log(this.state.currentVideo)}
       </div>
     );
   }
