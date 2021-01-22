@@ -9,7 +9,7 @@ import VideoDetail from './component/VideoDetail';
 import './style/Video.css';
 import './style/home.css';
 
-const KEY = 'AIzaSyCd5gPUrQBxlFpvZ_2MLjyHw1qudLuMaGc';
+const API_KEY = process.env.REACT_APP_API_KEY_YOUTBE;
 
 class App extends React.Component {
   state = { videos: [], word: '', currentVideo: null };
@@ -22,7 +22,7 @@ class App extends React.Component {
           type: 'video',
           maxResults: 5,
           q: word,
-          key: KEY,
+          key: API_KEY,
         },
       })
       .then((response) => this.setState({ videos: response.data.items, currentVideo: response.data.items[0] }))
